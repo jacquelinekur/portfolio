@@ -4,7 +4,9 @@
   color: white;
   display: flex;
   align-items: stretch;
+  justify-content: space-between;
   padding: 0 1rem;
+  z-index: 1000;
 }
 
 .navigation ul{
@@ -12,7 +14,6 @@
   margin: 0;
   list-style: none;
   display: flex;
-  position: relative;
   gap: 1rem;
   font-size: 18px;
 }
@@ -29,6 +30,13 @@
   align-items: center;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.site-title{
+  font-size: 20px;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
 }
 
 .profile {

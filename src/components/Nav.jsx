@@ -5,6 +5,7 @@ import '../App.css'
 function Nav() {
     return (
         <nav className='navigation'>
+            <h3 className='site-title'>Jacqueline Kurniawan</h3>
             <ul>
                 <li>
                     <Link to='/'>Home</Link>
