@@ -1,4 +1,11 @@
 body {
-  background-color: rgb(233, 233, 191);
+  background-color: rgb(237, 237, 237);
+  margin: 0;
+  padding: 0;
 }
+
+p{
+  color: white;
+}
+
 
