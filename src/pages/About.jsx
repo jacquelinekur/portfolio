@@ -10,6 +10,7 @@ function about() {
         I enjoy working with Java, Python, React, and SQL.
         <br /> Check out my projects below, or feel free to contact me!  </p>
     </div>
+    // add skills
   )
 }
 
