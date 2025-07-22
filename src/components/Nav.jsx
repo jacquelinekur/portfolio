@@ -1,8 +1,10 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll'
 import '../App.css'
 
 function Nav() {
+    const location = useLocation();
     return (
         <nav className='navigation'>
             <h3 className='site-title'>Jacqueline Kurniawan</h3>

@@ -23,4 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-R0000194.PNG
+*.jpg
+*.png
+*.pdf
+*.webp

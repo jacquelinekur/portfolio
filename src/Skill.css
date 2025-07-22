@@ -1,0 +1,26 @@
+.skill{
+    display: flex;
+    border: solid;
+    padding: 0 0.5rem;
+    gap: 0.5rem;
+    align-items: center;
+    background-color: rgb(237, 237, 237);
+    border-radius: 5px;
+    justify-content: center;
+    position: relative;
+}
+
+.skill:hover{
+    background-color: rgba(215, 215, 215, 0.79);
+    transition: 300ms;
+    bottom: 3px;
+}
+
+.skill-image{
+    width: 2rem;
+}
+
+.skill-name{
+    font-size: 15px;
+}
+

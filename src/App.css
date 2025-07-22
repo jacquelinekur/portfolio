@@ -1,3 +1,4 @@
+/* navigation bar */
 .navigation{
   background-color: rgb(41, 40, 40);
   height: 3rem;
@@ -34,19 +35,20 @@
 }
 
 .site-title{
-  font-size: 20px;
+  font-size: 19px;
   font-weight: normal;
   display: flex;
   align-items: center;
   padding: 0 1rem;
 }
 
+/* home page */
+
 .home{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 100vh;
- 
 }
 
 .home h1{
@@ -70,26 +72,31 @@
   color: white;
   border-radius: 5px;
   border: none;
-  width: 9rem;
+  width: 10.5rem;
   transition: 300ms;
   position: relative;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 15px;
 }
 
 #home--button-download:hover{
   background-color: rgb(73, 71, 71);
   bottom: 3px;
   transition: 300ms;
-  
 }
 
 #home--button-contact{
-  width: 8rem;
+  width: 9rem;
   border-radius: 5px;
   border: 1.5px solid;
   position: relative;
   transition: 300ms;
   cursor: pointer;
+  font-size: 15px;
 }
 
 #home--button-contact:hover{
@@ -101,19 +108,48 @@
 }
 
 .profile {
-  width: 30vw;
+  width: 32vw;
   position: relative;
   border-radius: 20%;
 }
 
+
+/* about page */
 .about {
-  background-color: #4a2574;
-  border-radius: 10px;
-  padding: 15px;
-  position: relative;
-  top: 100px;
+  padding: 3rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
 }
 
+#about--text{
+  background-color: rgba(171, 171, 171, 0.556);
+  padding: 0 1rem;
+  border-radius: 10px;
+  color: rgb(29, 29, 29);
+}
+
+.about h1{
+  color: black;
+}
+
+.about-skills{
+  background-color: rgba(171, 171, 171, 0.556);
+  padding: 0rem 1rem 1rem 1rem;
+  border-radius: 10px;
+  color: rgb(29, 29, 29);
+}
+
+.skills-section{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  
+}
+
+/* projects page */
 .media {
   background-color: #4a2574;
   width: 75vw;
