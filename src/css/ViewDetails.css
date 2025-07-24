@@ -1,5 +1,5 @@
 .view-details {
-    background-color: rgba(3, 3, 3, 0.9);
+    background-color: rgba(54, 54, 54, 0.9);
     position: fixed;
     top: 0;
     left: 0;
@@ -12,13 +12,66 @@
     justify-content: center;
     z-index: 10000;
 
-    cursor: default;
+    cursor: auto;
 }
 
 .view-details-inner{
+    background-color: rgb(0, 0, 0);
+    margin: 2rem;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.details-content{
     background-color: black;
+    position: relative;
+    bottom: 30%;
+    padding: 1rem;
+}
+
+.details-header{
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details-anchors{
+    display: flex;
+    gap: 1rem;
+}
+
+.details-anchorIndiv{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(183, 183, 183);
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.details-anchorIndiv:hover{
+    background-color: rgb(129, 129, 129);
 }
 
 #details-img{
-    width: 30rem;
+    width: 22rem;
+}
+
+.details-anchor--img{
+    width: 1.25rem;
+}
+
+.details-techList{
+    display: flex;
+    gap: 1rem;
+}
+
+.details-techItem{
+    background-color: rgb(183, 183, 183);
+    padding: 0.25rem 0.75rem;
+    border-radius: 5px;
 }

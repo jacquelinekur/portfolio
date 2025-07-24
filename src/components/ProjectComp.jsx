@@ -19,10 +19,10 @@ function ProjectComp({image, title, projectDesc, techArr, gitHubLink}) {
     return text;
   }
 
-  function techToDiv(arr) {
+  function techToDiv(arr, name) {
     const newArr = arr.map((element, i) => {
       return (
-        <div key={i} className='techItem'>
+        <div key={i} className={name}>
           {element}
         </div>
       );
@@ -32,7 +32,7 @@ function ProjectComp({image, title, projectDesc, techArr, gitHubLink}) {
   }
 
   const trimmedDesc = trimText(projectDesc, 79);
-  const divArr = techToDiv(techArr);
+  const divArr = techToDiv(techArr, "techItem");
 
   return (
     <div className='project-comp'>
@@ -54,7 +54,7 @@ function ProjectComp({image, title, projectDesc, techArr, gitHubLink}) {
         <button id='view-details-btn' onClick={() => setWindowOpen(true)}>View Details</button>
       </div>
 
-      {windowOpen && <ViewDetails image={image} title={title} projectDesc={projectDesc} techArr={divArr} handleWindow={handleWindow}/>}
+      {windowOpen && <ViewDetails image={image} title={title} projectDesc={projectDesc} techArr={techToDiv(techArr, "details-techItem")} gitHubLink={gitHubLink} handleWindow={handleWindow}/>}
     </div>
   )
 }
