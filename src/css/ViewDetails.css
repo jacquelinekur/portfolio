@@ -1,0 +1,24 @@
+.view-details {
+    background-color: rgba(3, 3, 3, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    z-index: 10000;
+
+    cursor: default;
+}
+
+.view-details-inner{
+    background-color: black;
+}
+
+#details-img{
+    width: 30rem;
+}

@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Project.css'
 import github_icon from '../assets/github-logo.png'
 import open_icon from '../assets/maximize.png'
+import ViewDetails from './ViewDetails';
 
-function ProjectComp({ image, title, projectDesc, techArr }) {
+function ProjectComp({image, title, projectDesc, techArr, gitHubLink}) {
+  const[windowOpen, setWindowOpen] = useState(false);
+
+  function handleWindow(){
+    setWindowOpen((prevWindow) => !prevWindow);
+  }
 
   function trimText(text, maxLength) {
     if (text.length > maxLength) {
@@ -16,9 +22,9 @@ function ProjectComp({ image, title, projectDesc, techArr }) {
   function techToDiv(arr) {
     const newArr = arr.map((element, i) => {
       return (
-      <div key={i} className='techItem'>
-        {element}
-      </div>
+        <div key={i} className='techItem'>
+          {element}
+        </div>
       );
     });
 
@@ -30,7 +36,7 @@ function ProjectComp({ image, title, projectDesc, techArr }) {
 
   return (
     <div className='project-comp'>
-      <img className="project-img" src={image} alt="" />
+      <img className="project-img" src={image} />
       <div className='project-text'>
         <h3>{title}</h3>
         <p>{trimmedDesc}</p>
@@ -41,10 +47,14 @@ function ProjectComp({ image, title, projectDesc, techArr }) {
       </div>
 
       <div className='project-buttons'>
-        <a href="https://github.com/jacquelinekur/media-database.git" target='_blank'><img className='project-githubPic' src={github_icon} alt="" /></a>
-        <button id='popup-btn'><img id='popup-img' src={open_icon} alt="" /></button>
-        <button id='view-details-btn'>View Details</button>
+        <div className='project-links'>
+          <a href={gitHubLink} target='_blank'><img className='project-githubPic' src={github_icon} /></a>
+          <a href="" target='_blank'><img id='popup-img' src={open_icon} /></a>
+        </div>
+        <button id='view-details-btn' onClick={() => setWindowOpen(true)}>View Details</button>
       </div>
+
+      {windowOpen && <ViewDetails image={image} title={title} projectDesc={projectDesc} techArr={divArr} handleWindow={handleWindow}/>}
     </div>
   )
 }

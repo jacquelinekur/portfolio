@@ -156,5 +156,12 @@
 /* projects page */
 .project{
   padding: 3rem;
-  display: grid;
+  display: flex;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .project{
+    flex-direction: column;
+  }
 }
