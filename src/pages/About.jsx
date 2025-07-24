@@ -31,41 +31,41 @@ function about() {
           Check out my projects below, or feel free to contact me!  </p>
       </div>
 
+      <div className='divider'></div>
+
       <div className='about-skills'>
         <h1>Skills</h1>
         <h3>Languages</h3>
         <div className='skills-section'>
-          <Skill image={java_icon} name="Java"></Skill>
-          <Skill image={python_icon} name="Python"></Skill>
-          <Skill image={javascript_icon} name="JavaScript"></Skill>
-          <Skill image={typescript_icon} name="TypeScript"></Skill>
-          <Skill image={html_icon} name="HTML"></Skill>
-          <Skill image={css_icon} name="CSS"></Skill>
-          <Skill image={sql_icon} name="SQL"></Skill>
+          <Skill image={java_icon} name="Java"/>
+          <Skill image={python_icon} name="Python"/>
+          <Skill image={javascript_icon} name="JavaScript"/>
+          <Skill image={typescript_icon} name="TypeScript"/>
+          <Skill image={html_icon} name="HTML"/>
+          <Skill image={css_icon} name="CSS"/>
+          <Skill image={sql_icon} name="SQL"/>
         </div>
 
         <h3>Frameworks & Libraries</h3>
         <div className='skills-section'>
-          <Skill image={java_icon} name="JavaFX"></Skill>
-          <Skill image={react_icon} name="React.js"></Skill>
-          <Skill image={node_icon} name="Node.js"></Skill>
+          <Skill image={java_icon} name="JavaFX"/>
+          <Skill image={react_icon} name="React.js"/>
+          <Skill image={node_icon} name="Node.js"/>
         </div>
 
         <h3>Databases</h3>
         <div className='skills-section'>
-          <Skill image={mysql_icon} name="MySQL"></Skill>
-          <Skill image={sqlite_icon} name="SQLite"></Skill>
-
+          <Skill image={mysql_icon} name="MySQL"/>
+          <Skill image={sqlite_icon} name="SQLite"/>
         </div>
 
         <h3>Tools & Technologies</h3>
         <div className='skills-section'>
-          <Skill image={git_icon} name="git"></Skill>
+          <Skill image={git_icon} name="git"/>
           <button>JUnit</button>
           <button>Mockito</button>
-          <Skill image={intellij_icon} name="IntelliJ IDEA"></Skill>
-          <Skill image={vscode_icon} name="VS Code"></Skill>
-
+          <Skill image={intellij_icon} name="IntelliJ IDEA"/>
+          <Skill image={vscode_icon} name="VS Code"/>
         </div>
       </div>
     </div>

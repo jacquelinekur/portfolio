@@ -125,7 +125,7 @@
 }
 
 #about--text{
-  background-color: rgba(171, 171, 171, 0.556);
+  /* background-color: rgba(171, 171, 171, 0.556); */
   padding: 0 1rem;
   border-radius: 10px;
   color: rgb(29, 29, 29);
@@ -136,7 +136,7 @@
 }
 
 .about-skills{
-  background-color: rgba(171, 171, 171, 0.556);
+  /* background-color: rgba(171, 171, 171, 0.556); */
   padding: 0rem 1rem 1rem 1rem;
   border-radius: 10px;
   color: rgb(29, 29, 29);
@@ -149,13 +149,12 @@
   
 }
 
-/* projects page */
-.media {
-  background-color: #4a2574;
-  width: 75vw;
-  place-content: center;
+.divider{
+  border: 1px solid black;
 }
 
-.media.photo {
-  width: 70vw;
+/* projects page */
+.project{
+  padding: 3rem;
+  display: grid;
 }

@@ -1,14 +1,13 @@
 import React from 'react'
 import project1 from '../assets/media-database.png'
+import ProjectComp from '../components/ProjectComp'
 
 function Projects() {
   return (
-    <>
-      <div className='media'>
-        <img className='media photo' src={project1} alt="" />
-        <h3>Media Database Application</h3>
-      </div>
-    </>
+    <div className="project">
+      <ProjectComp image={project1} title="Media Database" 
+      projectDesc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, explicabo expedita odio illum pariatur doloremque."/>
+    </div>
   )
 }
 
