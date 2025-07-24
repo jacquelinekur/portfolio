@@ -3,17 +3,30 @@ import '../Project.css'
 import github_icon from '../assets/github-logo.png'
 import open_icon from '../assets/maximize.png'
 
-function ProjectComp({image, title, projectDesc}) {
+function ProjectComp({ image, title, projectDesc, techArr }) {
 
-  function trimText(text, maxLength){
-    if(text.length > maxLength){
+  function trimText(text, maxLength) {
+    if (text.length > maxLength) {
       return text.substring(0, maxLength) + "...";
     }
 
     return text;
   }
 
+  function techToDiv(arr) {
+    const newArr = arr.map((element, i) => {
+      return (
+      <div key={i} className='techItem'>
+        {element}
+      </div>
+      );
+    });
+
+    return newArr;
+  }
+
   const trimmedDesc = trimText(projectDesc, 79);
+  const divArr = techToDiv(techArr);
 
   return (
     <div className='project-comp'>
@@ -22,9 +35,14 @@ function ProjectComp({image, title, projectDesc}) {
         <h3>{title}</h3>
         <p>{trimmedDesc}</p>
       </div>
+
+      <div className='tech_list'>
+        {divArr}
+      </div>
+
       <div className='project-buttons'>
         <a href="https://github.com/jacquelinekur/media-database.git" target='_blank'><img className='project-githubPic' src={github_icon} alt="" /></a>
-        <button id='popup-btn'><img id='popup-img' src={open_icon} alt=""/></button>
+        <button id='popup-btn'><img id='popup-img' src={open_icon} alt="" /></button>
         <button id='view-details-btn'>View Details</button>
       </div>
     </div>
