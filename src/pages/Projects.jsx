@@ -6,7 +6,7 @@ import ProjectComp from '../components/ProjectComp'
 function Projects() {
 
   return (
-    <>
+    <div className='project-page'>
       <h1 id='project-heading'>My Projects</h1>
       <div className="project">
         <ProjectComp
@@ -23,7 +23,7 @@ function Projects() {
           techArr={['Java', 'JavaFX', 'MySQL']}
           gitHubLink="https://github.com/jacquelinekur/media-database.git" />
       </div>
-    </>
+    </div>
   )
 }
 

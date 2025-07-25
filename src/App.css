@@ -117,7 +117,6 @@
 /* about page */
 .about {
   padding: 3rem;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,8 +153,11 @@
 }
 
 /* projects page */
+.project-page{
+  padding: 3rem;
+}
+
 .project{
-  padding: 0.5rem 3rem;
   display: flex;
   gap: 2rem;
 }
@@ -168,4 +170,14 @@
 
 #project-heading{
     text-align: center;
+    padding-bottom: 2rem;
+}
+
+.contact{
+  padding: 3rem;
+}
+
+.contact-form{
+  background-color: rgb(32, 32, 32);
+  color: white;
 }

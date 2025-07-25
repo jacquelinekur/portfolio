@@ -4,9 +4,9 @@ import linkedin_icon from '../assets/linkedin.png'
 
 function Contact() {
   return (
-    <div>
+    <div className='contact'>
       <h1>Contact Me</h1>
-      <form action="">
+      <form action="" className='contact-form'>
         <div>
             <label>Name</label>
             <input type="text" placeholder="Your Name" />
