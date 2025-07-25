@@ -15,12 +15,23 @@ function ViewDetails({ image, title, projectDesc, techArr, gitHubLink, handleWin
                             <a className='details-anchorIndiv' href={gitHubLink} target='_blank'>
                                 <img className='details-anchor--img' src={github_icon} />GitHub</a>
                             <a className='details-anchorIndiv' href="">
-                                <img className='details-anchor--img' src={demo_icon}/>Demo</a>
+                                <img className='details-anchor--img' src={demo_icon} />Demo</a>
                         </div>
                     </div>
-                    <p id='details-text'>{projectDesc}</p>
-                    <div className='details-techList'>
-                        {techArr}
+                    <p>{projectDesc}</p>
+                    <div className='tech-features'>
+                        <div className='tech-block'>
+                            <h3 className='details-head-text'>Technologies</h3>
+                            <div className='details-techList'>
+                                {techArr}
+                            </div>
+                        </div>
+                        <div className='features-block'>
+                            <h3 className='details-head-text'>Features</h3>
+                            <ul>
+                                <li>hello</li>
+                            </ul>
+                        </div>
                     </div>
                     <button onClick={() => handleWindow()}>Close</button>
                 </div>

@@ -155,7 +155,7 @@
 
 /* projects page */
 .project{
-  padding: 3rem;
+  padding: 0.5rem 3rem;
   display: flex;
   gap: 2rem;
 }
@@ -164,4 +164,8 @@
   .project{
     flex-direction: column;
   }
+}
+
+#project-heading{
+    text-align: center;
 }
