@@ -30,6 +30,8 @@ function ViewDetails({ image, title, projectDesc, techArr, gitHubLink, handleWin
                             <h3 className='details-head-text'>Features</h3>
                             <ul>
                                 <li>hello</li>
+                                <li>hello</li>
+
                             </ul>
                         </div>
                     </div>
