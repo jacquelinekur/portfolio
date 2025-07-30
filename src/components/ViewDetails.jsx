@@ -35,7 +35,10 @@ function ViewDetails({ image, title, projectDesc, techArr, gitHubLink, handleWin
                             </ul>
                         </div>
                     </div>
-                    <button onClick={() => handleWindow()}>Close</button>
+                    <div id='line-separator'/>
+                    <div className='btn-wrap'>
+                        <button id='close-btn' onClick={() => handleWindow()}>Close</button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -16,12 +16,13 @@
 }
 
 .view-details-inner{
-    background-color: pink;
+    background-color: black;
     width: 900px;
     margin: 2rem 0rem 2rem 0rem;
     overflow: hidden;
     border-radius: 20px;
     overflow: auto;
+    
 }
 
 .details-content{
@@ -95,3 +96,19 @@
     font-size: 14px;
     border-radius: 5px;
 }
+
+#line-separator{
+    border: solid white 1px;
+}
+
+.btn-wrap{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#close-btn{
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
